@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!--start-->
+
+<head>
+    <title>YOU DIED LMAW</title>
+    <%# <link rel="stylesheet" href="..\..\css\youdied.css" /> %>
+</head>
+
+<body>
+
+    <%# <img src="..\..\images\youdied.png" /> %>
+    <%= image_tag('youdied.PNG') %>
+    <p>
+        With your low health, Duterte managed to finish you off before you inflict any mortal wound on him.
+        <br /> <br />
+        TIP: choosing paths where you have a weapon advantage will minimize damage received
+    </p>
+
+    <br /> <br /> <br />
+
+    <%# <button onclick="window.location.href = '../index.html';">
+        Play Again
+    </button> %>
+    <%= button_to "Play Again", root_path, :method => "get" %>
+</body>
+
+</html> <!--end-->

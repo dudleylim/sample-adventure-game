@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<!--start-->
+
+<head>
+    <title>Dead CSS</title>
+    <%# <link rel="stylesheet" href="..\..\css\b1sword.css" /> %>
+</head>
+
+<body>
+    <p>
+        Health:
+    </p>
+    <table class="hpbar" border="1">
+        <tr>
+            <td><div id="hp">/////////</div></td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <p>
+        As a bow user, there is enough room and cover to take out enemies safely. You took very minimal damage while exploring.
+        <br />
+        At the end of the promenade, the path branches out. One path has an elevator leading to the ramparts, while the other goes down to the ossuary.
+    </p>
+
+    <table class="select">
+        <tr>
+            <td>
+                <%# <a href="c1bow.html"><img src="..\..\images\rampart.png" /></a> %>
+                <%= link_to image_tag('rampart.PNG'), bow_c1_path %>
+                <p>Ramparts: high rise fortifications which house the best archers to keep out foreign invaders and other infidels</p>
+            </td>
+
+            <td>
+                <%# <a href="c2bow.html"><img src="..\..\images\ossuary.png" /></a> %>
+                <%= link_to image_tag('ossuary.PNG'), bow_c2_path %>
+                <p>Ossuary: spooky place full of skeletons and undead, as well as wardens who aggressively attacks any living intruders</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html> <!--end-->

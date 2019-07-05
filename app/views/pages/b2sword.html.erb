@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<!--start-->
+
+<head>
+    <title>Dead CSS</title>
+    <%# <link rel="stylesheet" href="..\..\css\b1sword.css" /> %>
+</head>
+
+<body>
+    <p>
+        Health:
+    </p>
+    <table class="hpbar" border="1">
+        <tr>
+            <td><div id="hp">////////</div></td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <p>
+        As a sword user, you took care of the varmints with relative ease. You received some damage.
+        <br />
+        The canals present two paths: a ladder leading to the ramparts or a pipe leading deeper into the sewers
+    </p>
+
+    <table class="select">
+        <tr>
+            <td>
+                <%# <a href="c3sword.html"><img src="..\..\images\ancientsewers.png" /></a> %>
+                <%= link_to image_tag('ancientsewers.PNG'), sword_c3_path %>
+                <p>Ancient Sewers: tight spaces full of nasty bugs and monsters, not so different from the last sewer area</p>
+            </td>
+
+            <td>
+                <%# <a href="c4sword.html"><img src="..\..\images\rampart.png" /></a> %>
+                <%= link_to image_tag('rampart.PNG'), sword_c4_path %>
+                <p>Ramparts: high rise fortifications which house the best archers to keep out foreign invaders and other infidels</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html> <!--end-->

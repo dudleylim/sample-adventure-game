@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--start-->
+
+<head>
+    <title>Dead CSS</title>
+    <%# <link rel="stylesheet" href="..\..\css\c2sword.css" /> %>
+</head>
+
+<body>
+    <p>
+        Health:
+    </p>
+    <table class="hpbar" border="1">
+        <tr>
+            <td><div id="hp">//////</div></td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <p>
+        As a bow user, your experience has helped you survive the intense ranged battle that just took place. You took minimal damage.
+        <br />
+        At the end of the ramparts, there is another elevator leading to the bridge... and your escape.
+    </p>
+
+    <br />
+
+    <%# <a href="d1bowlive.html"><img src="..\..\images\blackbridge.png" class="select" /></a> %>
+    <%= link_to image_tag('blackbridge.PNG'), bow_d1win_path %>
+    <p class="center">Black Bridge: the only way out of prison, guarded by the most experienced warden named Duterte. There is other way out, and you will not come out unscathed from the inevitable fight</p>
+
+</body>
+
+</html> <!--end-->

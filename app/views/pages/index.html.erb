@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html> <!--start-->
+
+<head>
+    <title>Dead CSS</title>
+    <%# <link rel="stylesheet" href="..\css\index.css" /> %>
+</head>
+
+<body>
+    <%# <div id="base"><img src="..\images\base.png" /></div> %>
+    <%= image_tag('base.PNG')%>
+    <p style="text-align: center;">Welcome to Dead CSS, a rogue-like text adventure game. You are imprisoned because of your various misdeeds and must escape from death row. As you break out of your cell, you find two weapons. Pick one.</p> <br />
+    <div id="base">
+    <table>
+        <tr>
+            <td>
+                <%# <a href="swordhtml\a1sword.html"><img src="..\images\swordstart.png" /></a> %>
+                <%= link_to image_tag('swordstart.PNG'), sword_a1_path %>
+                <p>Sword: Weapon for close-quarters combat</p>
+            </td>
+            <td></td>
+            <td>
+                <%# <a href="bowhtml\a1bow.html"><img src="..\images\bowstart.png" /></a> %>
+                <%= link_to image_tag('bowstart.PNG'), bow_a1_path %>
+                <p>Bow: Weapon for ranged combat</p>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+</body>
+
+</html> <!--end-->

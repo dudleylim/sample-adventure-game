@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!--start-->
+
+<head>
+    <title>YOU WIN</title>
+    <%# <link rel="stylesheet" href="..\..\css\win.css" /> %>
+</head>
+
+<body>
+    <%# <img src="..\..\images\win.png" /> %>
+    <%= image_tag('win.PNG') %>
+    <p>
+        Congratulations! With your optimal path choice and tactical thinking, you are now free from the hands of Duterte and his goons. <br />
+        You became a loyal knight, serving another country who recognized your efforts to fight back against corruption.
+    </p>
+
+    <br /> <br /> <br />
+
+    <%# <button onclick="window.location.href = '../index.html';">
+        Play Again
+    </button> %>
+    <%= button_to "Play Again", root_path, :method => "get" %>
+</body>
+
+</html> <!--end-->

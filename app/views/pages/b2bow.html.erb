@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!--start-->
+
+<head>
+    <title>YOU DIED LMAW</title>
+    <%# <link rel="stylesheet" href="..\..\css\youdied.css" /> %>
+</head>
+
+<body>
+
+    <%# <img src="..\..\images\youdied.png" /> %>
+    <%= image_tag('youdied.PNG') %>
+    <p>
+        Without any space to properly aim your bow, your enemies easily overwhelmed you.
+        <br /> <br />
+        TIP: tight spaces are bad for bow users due to difficulty of aiming
+    </p>
+
+    <br /> <br /> <br />
+
+    <%# <button onclick="window.location.href = '../index.html';">
+        Play Again
+    </button> %>
+    <%= button_to "Play Again", root_path, :method => "get" %>
+</body>
+
+</html> <!--end-->

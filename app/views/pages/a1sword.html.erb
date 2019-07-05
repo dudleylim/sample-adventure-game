@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><!--start-->
+
+<head>
+    <title>Dead CSS</title>
+    <%# <link rel="stylesheet" href="..\..\css\a1sword.css" /> %>
+</head>
+
+<body>
+    <p>
+        Health:
+    </p>
+    <table class="hpbar" border="1">
+        <tr>
+            <td><div id="hp">//////////</div></td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <p>
+        You picked up the sword and made easy work of the grunts. So far so good. After all, we're just starting.
+        <br />
+        As you explore around, you found two ways out: the promenade and the sewers.
+    </p>
+
+    <table class="select">
+        <tr>
+            <td>
+                <%# <a href="b1sword.html"><img src="..\..\images\promenade.png" /></a> %>
+                <%= link_to image_tag('promenade.PNG'), sword_b1_path %>
+                <p>Promenade of the Condemed: known for its open, green space as well as guards perched on towers, ready to catch any fleeing inmates</p>
+            </td>
+
+            <td>
+                <%# <a href="b2sword.html"><img src="..\..\images\sewers.png" /></a> %>
+                <%= link_to image_tag('sewers.PNG'), sword_b2_path %>
+                <p>Toxic Sewers: notorious for its cramped spaces and dangers that has taken many lives, prisoners or not</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html> <!--end-->
